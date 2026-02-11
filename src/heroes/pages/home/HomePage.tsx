@@ -24,8 +24,8 @@ export const HomePage = () => {
 
     const activeTab = searchParams.get('tab') ?? 'all';
     const paginate = {
-        page: searchParams.get('page') ?? '1',
-        limit: searchParams.get('limit') ?? '6',
+        page: Number(searchParams.get('page')) || 1,
+        limit: Number(searchParams.get('limit')) || 6,
         category: searchParams.get('category') ?? 'all'
     };
 

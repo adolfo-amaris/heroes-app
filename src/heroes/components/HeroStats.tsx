@@ -1,4 +1,4 @@
-import { use, useMemo } from "react";
+import { use } from "react";
 // import { useQuery } from "@tanstack/react-query"
 // import { getSummaryAction } from "../actions/get-summary.actions"
 import { Heart, Trophy, Users, Zap } from "lucide-react"
@@ -54,8 +54,8 @@ export const HeroStats = () => {
             >
 
                 {/* TODO tenemos que cálcular este valor */}
-                <div className="text-2xl font-bold text-red-600">{favoriteCount}</div>
-                <p className="text-xs text-muted-foreground">{((favoriteCount / summary.totalHeroes) * 100).toFixed(2)}% of total</p>
+                <div className="text-2xl font-bold text-red-600" data-testid='favorite-count'>{favoriteCount}</div>
+                <p className="text-xs text-muted-foreground" data-testid='favorite-percentage'>{((favoriteCount / summary.totalHeroes) * 100).toFixed(2)}% of total</p>
             </ HeroStatCard>
 
             <HeroStatCard

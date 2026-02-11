@@ -1,10 +1,10 @@
+import { useSearchParams } from "react-router";
 import { CustomJumbotron } from "@/components/custom/CustomJumbotron";
+import { CustomBreadCrumbs } from "@/components/custom/CustomBreadCrumbs";
 import { HeroStats } from "@/heroes/components/HeroStats";
 import { SearchControl } from "./ui/SearchControl";
-import { CustomBreadCrumbs } from "@/components/custom/CustomBreadCrumbs";
 import { HeroGrid } from "@/heroes/components/HeroGrid";
 import { useSearchHero } from "@/heroes/hooks/useSearchHero";
-import { useSearchParams } from "react-router";
 
 export const SearchPage = () => {
 

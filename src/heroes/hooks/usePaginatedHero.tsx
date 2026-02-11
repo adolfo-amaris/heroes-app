@@ -2,9 +2,9 @@ import { useQuery } from "@tanstack/react-query";
 import { getHeoresByPageAction } from "../actions/get-heores-by-page.action";
 
 interface Props {
-    page: string,
-    limit: string,
-    category: string
+    page: number,
+    limit: number,
+    category?: string
 }
 
 export const usePaginatedHero = ({ page, limit, category = 'all' }: Props) => {

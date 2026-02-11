@@ -1,5 +1,5 @@
-import { Link, useLocation } from "react-router"
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "../ui/breadcrumb"
+import { Link } from "react-router"
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbSeparator } from "../ui/breadcrumb"
 import { SlashIcon } from "lucide-react";
 // import React from "react";
 
